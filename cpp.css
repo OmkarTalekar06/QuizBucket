@@ -27,7 +27,7 @@
         font-size: 20px;
     }
     .quenstion-box{
-        height: 35vh;
+        height: 40vh;
         width: 95%;
         background-color: aliceblue;
         margin-left: 1%;
@@ -51,6 +51,11 @@
         font-size: 20px;
         
     }
+    .answer{
+        display: none;
+        margin-left: 13%;
+        font-family: Comic Sans MS;
+    }
     .option{
         margin-left: 10%;
         margin-top: 0.5%;
@@ -61,6 +66,4 @@
         margin-top: 5%;
         margin-left: 35vw;
         border-radius: 10%;
-        
-        
     }

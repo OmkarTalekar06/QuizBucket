@@ -107,4 +107,9 @@ function chk() {
     }
     
     document.getElementById("res").innerHTML = marks + " marks";
+    let allAnswers = document.getElementsByClassName("answer");
+    for (let i = 0; i < allAnswers.length; i++) {
+        allAnswers[i].style.display = "block";
+        
+    }
 }
