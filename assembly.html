@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizBucket - Assembly language</title>
+    <script src="assembly.js"></script>
+    <link rel="stylesheet" href="cpp.css">
+</head>
+<style>
+
+</style>
+<body>
+    <header>
+        <div id="head">
+            <h1 id="head-logo">QuizBucket</h1>
+        </div>
+    </header>
+    <nav>
+        <div id="nav"><marquee>Hello, Welcome to QuizBucket ! The wrong answers will turn red, & correct ones green with tour score at the end.  <B>Thankyou</B>  </marquee></div>
+    </nav>
+    <div class="quenstion-box" id="Q1">
+        <h2>Q1.When was 8085 microprocessor made & by whowm ?</h2>
+        <hr>
+        <input type="radio" name="inventor" id="intel" class="option"><label for="intel">In 1976 by Intel </label><br> 
+        <input type="radio" name="inventor" id="amd" class="option"><label for="amd">In 1975 by Amd </label><br> 
+        <input type="radio" name="inventor" id="microsoft" class="option"><label for="microsoft">In 1976 by Microsoft </label> <br>
+        <input type="radio" name="inventor" id="IBM" class="option"><label for="IBM">In 1975 by IBM </label> 
+        <h4 class="answer">Answer is: In 1976 by Intel</h4>
+    </div>
+    <div class="quenstion-box" id="Q2">
+        <h2>Q2. Arithmetic and Logical operations of 8085 microprocessor are processed</h2>
+        <hr>
+        <input type="radio" name="operations" id="CU" class="option"><label for="CU"> Control Unit</label><br> 
+        <input type="radio" name="operations" id="ALU" class="option"><label for="ALU">Arithmetic Logical Unit</label><br> 
+        <input type="radio" name="operations" id="CPU" class="option"><label for="CPU">Central Processing Unit</label> <br>
+        <input type="radio" name="operations" id="MGJ" class="option"><label for="MDJ">Main Data Junction</label>
+        <h4 class="answer">Answer is Arithmetic Logical Unit</h4>
+    </div>
+    <div class="quenstion-box" id="Q3">
+        <h2>Q3. Which device syncronizes all operations by providing timming signals?  </h2>
+        <hr>
+        <input type="radio" name="seconds" id="timmer" class="option"><label for="timmer"> Timmer</label><br> 
+        <input type="radio" name="seconds" id="moderator" class="option"><label for="moderator"> Moderator</label><br> 
+        <input type="radio" name="seconds" id="clock" class="option"><label for="clock"> Clock</label> <br>
+        <input type="radio" name="seconds" id="runner" class="option"><label for="runner"> Runner</label>
+        <h4 class="answer">Answer is Clock</h4>
+    </div>
+    <div class="quenstion-box" id="Q4">
+        <h2 style="font-size: 25px;">Q4. Which of them is a primary storage location for performing arithmetic ooperations ? </h2>
+        <hr>
+        <input type="radio" name="primary" id="T" class="option"><label for="T"> Terminator </label><br> 
+        <input type="radio" name="primary" id="R" class="option"><label for="R"> Register </label><br> 
+        <input type="radio" name="primary" id="A" class="option"><label for="A"> Accumulator </label><br>
+        <input type="radio" name="primary" id="C" class="option"><label for="C"> Collector </label>
+        <h4 class="answer">Answer is Accumulator</h4>
+    </div>
+    <div class="quenstion-box" id="Q5">
+        <h2>Q5. Holds the adress of the next instructions to be excecuted </h2>
+        <hr>
+        <input type="radio" name="adress" id="ADDBOX" class="option"><label for="ADDBOX">Adress Box</label><br> 
+        <input type="radio" name="adress" id="poi" class="option"><label for="poi">pointer</label><br> 
+        <input type="radio" name="adress" id="oper" class="option"><label for="oper">Programme Counter (PC)</label> <br>
+        <input type="radio" name="adress" id="ins" class="option"><label for="ins">InstuctionsSet</label>
+        <h4 class="answer">Answer is: Programme Counter(PC)</h4>
+    </div>
+    <div class="quenstion-box" id="Q6">
+        <h2>Q6. First Generation of Microprocessors ruled in the era ______ </h2>
+        <hr>
+        <input type="radio" name="year" id="69" class="option"><label for="69">1969-1971</label><br> 
+        <input type="radio" name="year" id="71" class="option"><label for="71">1971-1973</math></label><br> 
+        <input type="radio" name="year" id="75" class="option"><label for="75">1975-1977</label> <br>
+        <input type="radio" name="year" id="76" class="option"><label for="76">1976-1978</label>
+        <h4 class="answer">Answer is: 1971-1973</h4>
+    </div>
+    <div class="quenstion-box" id="Q7">
+        <h2>Q7. Clock speed of Second Generation Microprocessors was</h2>
+        <hr>
+        <input type="radio" name="speed" id="mhz" class="option"><label for="mhz">2MHz</label><br> 
+        <input type="radio" name="speed" id="ghz" class="option"><label for="ghz">2Ghz</label><br> 
+        <input type="radio" name="speed" id="2mhz" class="option"><label for="2mhz">4Mhz</label> <br>
+        <input type="radio" name="speed" id="2ghz" class="option"><label for="2ghz">4Ghz</label>
+        <h4 class="answer">Answer is: 2Mhz </h4>
+    </div>
+    <div class="quenstion-box" id="Q8">
+        <h2>Q8. Word size of Third Generation Microprocessors was</h2>
+        <hr>
+        <input type="radio" name="word" id="w1" class="option"><label for="w1">4 bit</label><br> 
+        <input type="radio" name="word" id="w2" class="option"><label for="w2">8 bit</label><br> 
+        <input type="radio" name="word" id="w3" class="option"><label for="w3">16 bit</label> <br>
+        <input type="radio" name="word" id="w4" class="option"><label for="w4">32 bit </label>
+        <h4 class="answer">Answer is: 16 bit</h4>
+
+    </div>
+    <div class="quenstion-box" id="Q9">
+        <h2>Q9. Max Memory size for Fourth Generation Microprocessors was</h2>
+        <hr>
+        <input type="radio" name="memory" id="kb" class="option"><label for="kb">1kb</label><br> 
+        <input type="radio" name="memory" id="mb" class="option"><label for="mb">1mb</label><br> 
+        <input type="radio" name="memory" id="gb" class="option"><label for="gb">16mb</label> <br>
+        <input type="radio" name="memory" id="xb" class="option"><label for="xb">4Gb</label>
+        <h4 class="answer">Answer is : 4 Gb</h4>
+    </div>
+    <div class="quenstion-box" id="Q10">
+        <h2>Q10. Which of the following is a Multicore Microprocessor ?</h2>
+        <hr>
+        <input type="radio" name="multi" id="one" class="option"><label for="one">First Generation </label><br> 
+        <input type="radio" name="multi" id="two" class="option"><label for="two">Second Generation</label><br> 
+        <input type="radio" name="multi" id="three" class="option"><label for="three">Fourth Generation </label> <br>
+        <input type="radio" name="multi" id="four" class="option"><label for="four"> Fifth Generation</label>
+        <h4 class="answer">Answer is: Fifth Generation</h4>
+    </div>
+    <div class="quenstion-box" id="Q11">
+        <h2 style="font-size: 25px;">Q11. ______ instruction is used for moving data between registers and memory locations</h2>
+        <hr>
+        <input type="radio" name="data" id="move" class="option"><label for="move">MOV B,A</label><br> 
+        <input type="radio" name="data" id="put" class="option"><label for="put">PUT A,B</label><br> 
+        <input type="radio" name="data" id="load" class="option"><label for="load">LOAD A,B</label> <br>
+        <input type="radio" name="data" id="witch" class="option"><label for="witch">SWITCH A,B</label>
+        <h4 class="answer">Answer is: MOV B,A</h4>
+    </div>
+    <div class="quenstion-box" id="Q12">
+        <h2 style="font-size: 28px;">Q12. Which of the following means Load at Accumulator the value of 4000H ?</h2>
+        <hr>
+        <input type="radio" name="load" id="laa" class="option"><label for="laa">LAA 4000H</label><br> 
+        <input type="radio" name="load" id="lda" class="option"><label for="lda">LDA 4000H</label><br> 
+        <input type="radio" name="load" id="load2" class="option"><label for="load2">LOAD A,4000H</label> <br>
+        <input type="radio" name="load" id="nota" class="option"><label for="nota">NOTA</label>
+        <h4 class="answer">Answer is: LDA 4000H</h4>
+    </div>
+    <div class="quenstion-box" id="Q13">
+        <h2>Q13. Increment in the value at accumulator is done as ? </h2>
+        <hr>
+        <input type="radio" name="incr" id="one13" class="option"><label for="one13">LDA ++</label><br> 
+        <input type="radio" name="incr" id="two13" class="option"><label for="two13">PUT A+1</label><br> 
+        <input type="radio" name="incr" id="three13" class="option"><label for="three13">ADD A+1</label> <br>
+        <input type="radio" name="incr" id="four13" class="option"><label for="four13">INR A</label>
+        <h4 class="answer">Answer is: INR A </h4>
+    </div>
+        <div class="quenstion-box" id="Q14">
+        <h2>Q14. In Assembly AND operation is performed as...  </h2>
+        <hr>
+        <input type="radio" name="const" id="construct1" class="option"><label for="construct1">ANA B</label><br> 
+        <input type="radio" name="const" id="destruct1" class="option"><label for="destruct1">ORA B</label><br> 
+        <input type="radio" name="const" id="fun1" class="option"><label for="fun1">AND A,B</label> <br>
+        <input type="radio" name="const" id="dyn1" class="option"><label for="dyn1">AND B,A</label>
+        <h4 class="answer">Answer is: ANA B</h4>
+    </div>
+        <div class="quenstion-box" id="Q15">
+        <h2>Q15. In Assembly HLT means ?  </h2>
+        <hr>
+        <input type="radio" name="halt" id="one15" class="option"><label for="one15">halt</label><br> 
+        <input type="radio" name="halt" id="two15" class="option"><label for="two15">end</label><br> 
+        <input type="radio" name="halt" id="three15" class="option"><label for="three15">head to T</label> <br>
+        <input type="radio" name="halt" id="four15" class="option"><label for="four15">High LT</label>
+        <h4 class="answer">Answer is: halt</h4>
+    </div>
+    <button id="chk" onclick="chk()">Check Answer</button>
+    <div class="quenstion-box">
+        <h2 style="text-align: center;">Results.....</h2>
+        <h3 style="text-align: center;">You have obtained </h3><p id="res" style="text-align: center;">0 marks</p><h3 style="text-align: center;"> Out of 30 marks in this exam.
+        </h3>
+    </div>
+    <div class="quenstion-box" style="background-color: white;">    
+    </div>
+</body>
+</html>
