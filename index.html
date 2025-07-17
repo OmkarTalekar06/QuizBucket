@@ -39,12 +39,15 @@
         float: left;
         height: 50vh;
         width: 20%;
-        background-color: aquamarine;
+        background-color: aliceblue;
         margin-left: 4%;
         margin-top: 10vh;
         align-items: center;
         text-align: center;
         justify-content: center;
+    }
+    .sub-box:hover{
+        background-color: aquamarine;
     }
     .sub-box h2{
         font-size: 30px;
@@ -59,6 +62,31 @@
         margin-top: 5%;
         background-color: rgba(220, 77, 77, 0.502);
     }
+       @media only screen and (max-width: 400px) {
+    .sub-box {
+        height: 30vh;
+        width: 90%;
+        margin-left: 5%;
+        overflow: hidden;
+    }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+    .sub-box {
+        height: 30vh;
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+    .sub-box {
+        height: 30vh;
+        width: 70%;
+        margin-left: 15%;
+    }
+}
+
 </style>
 <body>
     <header>
@@ -73,6 +101,7 @@
     <div class="sub-box"><h2>Python</h2><hr><p>Give a short test of famous programming language Python. with our quizs setted by the experts in the Python industry </p> <a href="python.html"><button>Quiz</button></a> </div>
     <div class="sub-box"><h2>Web Dev</h2><hr><p>Experiencely setted by the <br> professional Web Developers with our quizs setted by the experts in the industry </p> <a href="web-dev.html"><button>Quiz</button></a></div>
     <div class="sub-box"><h2>Assembly</h2><hr><p>Give a short test of Assembly language used for baseline dev. with practical questions which are essential in assembly devlopment </p><a href="assembly.html"><button>Quiz</button></a></div>
+    <div class="sub-box"><h2>Full form </h2><hr><p>Full form test of various fullforms used in various sectors in INDIA, Very useful in Competetive exams. </p><a href="full-form.html"><button>Quiz</button></a></div>
     
 </body>
 </html>
