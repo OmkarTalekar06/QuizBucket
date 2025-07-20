@@ -71,3 +71,39 @@
     #result{
         display: none;
     }
+
+
+@media only screen and (max-width: 400px) {
+    .quenstion-box {
+        height: 34vh;
+        width: 90%;
+        margin-left: 5%;
+        overflow: hidden;
+        font-size: 18px;
+    }
+    .quenstion-box h2{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 600px) {
+    .quenstion-box {
+        height: 28vh;
+        width: 90%;
+        margin-left: 5%;
+        font-size: 18px;
+        overflow: hidden;
+    }
+    .quenstion-box h2{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+    .question-box {
+        height: 18vh;
+        width: 70%;
+        margin-left: 15%;
+        font-size: 22px;
+    }
+}
