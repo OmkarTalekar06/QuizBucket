@@ -117,7 +117,7 @@ function chk() {
 
 
 function sendMarks() {
-  const name = localStorage.getItem("username"); 
+  const name = localStorage.getItem("name"); 
   const subject = "C&Cpp";
   fetch("https://python-wwwi.onrender.com/sendmarks", {
     method: "POST",
