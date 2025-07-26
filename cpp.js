@@ -1,5 +1,5 @@
-let marks = 0;
 function chk() {
+    let marks = 0;
     if (document.getElementById("Dennis").checked) {
         marks += 2;
         document.getElementById("Q1").style.backgroundColor ="rgba(26, 242, 26, 0.5)";
@@ -112,13 +112,16 @@ function chk() {
     for (let i=0; i < allAnswers.length; i++){
         allAnswers[i].style.display = "block";
     }
+    sendMarks();
+    localStorage.setItem("marks", marks)
     console.log("Script Loaded");
-}
 
+}
 
 function sendMarks() {
   const name = localStorage.getItem("name"); 
   const subject = "C_Cpp";
+  const marks = parseInt(localStorage.getItem("marks")) || 0;
   fetch("https://python-wwwi.onrender.com/sendmarks", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
