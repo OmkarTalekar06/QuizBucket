@@ -114,3 +114,17 @@ function chk() {
     }
     console.log("Script Loaded");
 }
+
+
+function sendMarks() {
+  const name = localStorage.getItem("username"); 
+  const subject = "C&Cpp";
+  fetch("https://python-wwwi.onrender.com/sendmarks", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ name, subject, marks })
+  })
+  .then(res => res.json())
+  .then(data => console.log(data))
+  .catch(err => console.error("Error:", err));
+}
