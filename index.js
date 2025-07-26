@@ -1,5 +1,6 @@
 function get_name1() {
     let user_name = prompt("Please enter your name : ");
+    localStorage.setItem("name", user_name)
     if(user_name){
         fetch("https://python-wwwi.onrender.com/sendname", {
             method:'POST',
