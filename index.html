@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+    <script src="index.js"></script>
     <title>QuizBucket</title>
 </head>
 <style>
@@ -22,7 +24,7 @@
     #head-logo{
         margin-left: 5%;
         margin-top: 4%;
-        font-family: comic sans;
+        font-family: 'cinzel', sherif;
         font-size: 50px;
     }
     #nav{
@@ -62,7 +64,8 @@
         margin-top: 5%;
         background-color: rgba(220, 77, 77, 0.502);
     }
-       @media only screen and (max-width: 400px) {
+@media only screen and (max-width: 400px) {
+    
     .sub-box {
         height: 28vh;
         width: 90%;
@@ -72,6 +75,26 @@
 }
 
 @media only screen and (min-width: 401px) and (max-width: 600px) {
+    #head{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 18vh;
+        width: 100%;
+        background-color: aqua; 
+    }
+        #head-logo{
+        margin-left: 5%;
+        margin-top: 10%;
+        font-family: 'cinzel', sherif;
+        font-size: 50px;
+    }
+        #nav{
+        margin-top: 18vh;
+        background-color: rebeccapurple;
+        height: 5vh;
+        width: 100%;
+    }
     .sub-box {
         height: 30vh;
         width: 80%;
@@ -88,7 +111,7 @@
 }
 
 </style>
-<body>
+<body onload="get_name()">
     <header>
         <div id="head">
             <h1 id="head-logo">QuizBucket</h1>
