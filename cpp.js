@@ -112,8 +112,9 @@ function chk() {
     for (let i=0; i < allAnswers.length; i++){
         allAnswers[i].style.display = "block";
     }
-    sendMarks();
+    
     localStorage.setItem("marks", marks)
+    sendMarks();
     console.log("Script Loaded");
 
 }
