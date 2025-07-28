@@ -112,6 +112,21 @@ function chk() {
     for (let i = 0; i < allAnswers.length; i++) {
     allAnswers[i].style.display = "block";
 }
-console.log("Script Loaded")
+localStorage.setItem("marks_wd", marks)
+sendMarks();
+console.log("Script Loaded");
+}
 
+function sendMarks() {
+    const name = localStorage.getItem("name");
+    const subject = "Web - Dev";
+    const marks = parseInt(localStorage.getItem("marks_wd"));
+    fetch("https://python-wwwi.onrender.com/sendWebdevmarks", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({name, subject, marks})
+    })
+    .then(res => res.json())
+    .then(data => console.log(data))
+    .then(err => console.error("Error:", err));
 }

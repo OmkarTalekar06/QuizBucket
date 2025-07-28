@@ -113,7 +113,7 @@ function chk() {
         allAnswers[i].style.display = "block";
     }
     
-    localStorage.setItem("marks", marks)
+    localStorage.setItem("marks_cpp", marks)
     sendMarks();
     console.log("Script Loaded");
 
@@ -122,7 +122,7 @@ function chk() {
 function sendMarks() {
   const name = localStorage.getItem("name"); 
   const subject = "C_Cpp";
-  const marks = parseInt(localStorage.getItem("marks")) || 0;
+  const marks = parseInt(localStorage.getItem("marks_cpp")) || 0;
   fetch("https://python-wwwi.onrender.com/sendcppmarks", {
     method: "POST",
     headers: { "Content-Type": "application/json" },

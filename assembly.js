@@ -112,4 +112,23 @@ function chk() {
     for (let i=0; i < allAnswers.length; i++){
         allAnswers[i].style.display = "block";
     }
+
+    localStorage.setItem("marks_ass", marks);
+    sendMarks();
+
+    console.log("Script Loaded!")
+}
+
+function sendMarks(){
+    const name = localStorage.getItem("name");
+    const subject = "Assembly";
+    const marks = parseInt(localStorage.getItem("marks_ass"));
+    fetch("https://python-wwwi.onrender.com/sendassemblymarks", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({name, subject, marks})
+    })
+    .then(res => res.json())
+    .then(data => console.log(data))
+    .then(err => console.error("Error:", err))
 }

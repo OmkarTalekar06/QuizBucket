@@ -114,7 +114,7 @@ function chk() {
         
     }
 
-    localStorage.setItem("marks",marks)
+    localStorage.setItem("marks_py",marks)
     sendMarks();
     console.log("Script loaded!");
 }
@@ -122,11 +122,11 @@ function chk() {
 function sendMarks(){
     const name = localStorage.getItem("name");
     const subject = "Python";
-    const marks = parseInt(localStorage.getItem("marks")) || 0;
+    const marks = parseInt(localStorage.getItem("marks_py")) || 0;
     fetch("https://python-wwwi.onrender.com/sendpythonmarks",{
         method: "POST",
         headers: {"Content-Type": "application/json"},
-        body: JSON.stringify({name, subject, marks})
+        body: JSON.stringify({name, subject, marks })
     })
     .then(res => res.json())
     .then(data => console.log(data))

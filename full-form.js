@@ -112,5 +112,23 @@ function chk() {
     for (let i=0; i < allAnswers.length; i++){
         allAnswers[i].style.display = "block";
     }
+
+    localStorage.setItem("marks_ff", marks)
+    sendMarks();
+
     console.log("script Loaded");
+}
+
+function sendMarks(){
+    const name = localStorage.getItem("name");
+    const subject = "Full - Form";
+    const marks = parseInt(localStorage.getItem("marks_ff"));
+    fetch("https://python-wwwi.onrender.com/sendffmarks", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({name, subject, marks})
+    })
+    .then(res => res.json())
+    .then(data => console.log(data))
+    .then(err => console.error("Error:", err))
 }
