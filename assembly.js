@@ -129,6 +129,10 @@ function sendMarks(){
         body: JSON.stringify({name, subject, marks})
     })
     .then(res => res.json())
-    .then(data => console.log(data))
-    .then(err => console.error("Error:", err))
+    .then(data => {
+    console.log(data);
+    if (data.error) {
+        console.error("Error:", data.error);
+    }
+})
 }
