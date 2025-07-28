@@ -123,7 +123,7 @@ function sendMarks() {
   const name = localStorage.getItem("name"); 
   const subject = "C_Cpp";
   const marks = parseInt(localStorage.getItem("marks")) || 0;
-  fetch("https://python-wwwi.onrender.com/sendmarks", {
+  fetch("https://python-wwwi.onrender.com/sendcppmarks", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ name, subject, marks })
