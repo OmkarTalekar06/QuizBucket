@@ -128,5 +128,5 @@ function sendMarks() {
     })
     .then(res => res.json())
     .then(data => console.log(data))
-    .then(err => console.error("Error:", err));
+    .catch(err => console.error("Error:", err));
 }
