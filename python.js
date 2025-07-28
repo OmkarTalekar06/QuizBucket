@@ -1,5 +1,5 @@
-let marks = 0;
 function chk() {
+    let marks = 0;
     if (document.getElementById("Guido").checked) {
         marks += 2;
         document.getElementById("Q1").style.backgroundColor ="rgba(26, 242, 26, 0.5)";
@@ -113,4 +113,23 @@ function chk() {
         allAnswers[i].style.display = "block";
         
     }
+
+    localStorage.setItem("marks",marks)
+    sendMarks();
+    console.log("Script loaded!");
+}
+
+function sendMarks(){
+    const name = localStorage.getItem("name");
+    const subject = "Python";
+    const marks = parseInt(localStorage.getItem("marks")) || 0;
+    fetch("https://python-wwwi.onrender.com/sendpythonmarks",{
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({name, subject, marks})
+    })
+    .then(res => res.json())
+    .then(data => console.log(data))
+    .then(err => console.error("Error:", err));
+
 }
